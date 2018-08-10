@@ -1,1 +1,1 @@
-# personal_finance_ledger_python_cli
+# Personal Finance Ledger (Python CLI)
