@@ -53,17 +53,17 @@ class LedgerController:
         runningBalance = totalCredits + totalDebits
 
         print("\r\nTotal credits: ${0:.2f}").format(totalCredits)
-        print("\r\nTotal debits: ${0:.2f}").format(totalDebits)"
+        print("\r\nTotal debits: ${0:.2f}").format(totalDebits)
         print("\r\nRunning balance is: ${0:.2f}\r\n").format(runningBalance)
 
     def listAccounts(self):
         dataManager = DataManager()
         accountNames = dataManager.readFileNames()
 
-        print '\r\n'
+        print '\r\nAccounts: '
         for accountName in accountNames:
 
-            print('\t{}').format(accountName)
+            print("\t" + accountName)
 
         print '\r\n'
 
