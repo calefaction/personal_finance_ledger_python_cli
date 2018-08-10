@@ -52,12 +52,9 @@ class LedgerController:
 
         runningBalance = totalCredits + totalDebits
 
-        print "\r\n"
-        print("Total credits: ${0:.2f}").format(totalCredits)
-        print("Total debits: ${0:.2f}").format(totalDebits)
-        print "\r\n"
-        print("Running balance is: ${0:.2f}").format(runningBalance)
-        print "\r\n"
+        print("\r\nTotal credits: ${0:.2f}").format(totalCredits)
+        print("\r\nTotal debits: ${0:.2f}").format(totalDebits)"
+        print("\r\nRunning balance is: ${0:.2f}\r\n").format(runningBalance)
 
     def listAccounts(self):
         dataManager = DataManager()
