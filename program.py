@@ -11,7 +11,8 @@ class Program:
             print "Add to a ledger (Enter 2)"
             print "List accounts (Enter 3)"
             print "Get summary (Enter 4)"
-            print "Exit (Enter 5)"
+            print "Get master ledger (Enter 5)"
+            print "Exit (Enter 6)"
 
             selection = int(raw_input(""));
 
@@ -40,6 +41,9 @@ class Program:
                 ledgerController.totalLedger()
 
             elif(selection == 5):
+                ledgerController.masterLedger()
+
+            elif(selection == 6):
                 exit(0)
 
             else:
