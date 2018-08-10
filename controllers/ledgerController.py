@@ -12,6 +12,9 @@ class LedgerController:
             line_count = 0
             print "\r\n"
 
+            print("{0: <16}\t\t{1: <16}\t{2: <16}\t{3: <16}\t{4: <16}".format("Payee", "Credit ($)", "Debit ($)", "Date", "Memo"))
+            print "\r\n"
+
             for row in csv_reader:
                 payee = row[0]
                 credit = row[1]
@@ -21,7 +24,7 @@ class LedgerController:
 
 
                 print("{0: <16}\t\t{1: <16}\t{2: <16}\t{3: <16}\t{4: <16}".format(payee, credit, debit, date, memo))
-                
+
             print "\r\n"
 
     def totalLedger(self):
