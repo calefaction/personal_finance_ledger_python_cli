@@ -11,6 +11,7 @@ class Program:
             print "Add to a ledger (Enter 2)"
             print "List accounts (Enter 3)"
             print "Get summary (Enter 4)"
+            print "Exit (Enter 5)"
 
             selection = int(raw_input(""));
 
@@ -37,6 +38,9 @@ class Program:
 
             elif(selection == 4):
                 ledgerController.totalLedger()
+
+            elif(selection == 5):
+                exit(0)
 
             else:
                 print "Incorrect input, please try again."
